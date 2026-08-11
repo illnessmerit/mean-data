@@ -55,6 +55,7 @@
       # Direct execution of gitleaks here results in '[git] fatal: cannot change to 'devenv.nix': Not a directory'.
       entry = "bash -c 'exec gitleaks git --redact --staged --verbose'";
     };
+    prettier.enable = true;
     nixfmt.enable = true;
   };
 
